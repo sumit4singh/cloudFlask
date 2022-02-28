@@ -28,11 +28,11 @@ def storedata():
 def configures3(s3data: string):
     session = boto3.Session(aws_access_key_id="ASIARVAB6G2YSOY4LXAS",
                             aws_secret_access_key="scrpH8xfCUfSQDLvaUg7l3qlvlLrdIYqn6T08rKY",
-                            aws_session_token="FwoGZXIvYXdzEJj//////////wEaDJg+jKPTgycmXY5AJiLAAU2P8FEK1m7YCX6/0LjMzKlUKAysyTantwlhKKkKJaTP41MOGXRiyumMgXpbugLONqekBsbv7x632cjqIGzR86IXSIhN/zGgKG0dQTZ555dsSylH4CKh8Jd/I/368uYTX954shFGe+GWfhsOdAm1+9Ne4YfhD8VW/NAip4Hmz/Avi3x8XEWJVnIssy0LHqXh2LD0R3BbblrFUhqLvIpvL77aIyrxjFZlRe1jB1NMjQ6eJKlYYvuKuypslOtRiA7PUiiL7++QBjItmvuZ298+knB7aQrOLHLlVFTRP7OOO6tqfCRsp97eoUFfi4IpxoC3YPqGxewJ"
+                            aws_session_token="FwoGZXIvYXdzEK3//////////wEaDKi3SWRjH8j1aYrP7iLAAYe54sU9mLoGDEG0Tklrcp3JhmFTS0HXJlNgtxjuZKGR+oVjR0g8GdPjxaQMAGXuUp4+Slk8kWN67HezldF9Ks99S7/OZ8F1oTUE76YK+ia1wapm5FJ9rXfmVPiPRsBqVYgr1CNd2DozidLW3Ef7yGijyVTPCRfhsEqFg0C3/lOb+XC1bTcZsuoIN42aLkg3U8A4OvPgvS3tBwV9plCfJ8EkYaIH7E6esUMP38d8V7equW6RjcjQE+kSClEOSKGWwijnyvSQBjItYn/043QB0TyIbN7CNH2TD2wn6NgSV7E4wix4JB0XW4NUuQqmrNbg8Pr4eTiK"
                             )
     s3 = session.resource('s3')
     BUCKET_NAME = 'cloudassignmentb00882103'
-    obj: any = s3.Object(BUCKET_NAME, "sumitTest.txt")
+    obj: any = s3.Object(BUCKET_NAME, "B00882103File.txt")
     res = obj.put(Body=s3data)
 
 
