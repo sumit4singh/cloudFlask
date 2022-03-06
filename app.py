@@ -13,7 +13,7 @@ def hello_world():  # put application's code here
     data["banner"] = "B00882103"
     data["ip"] = "ec2-54-173-219-142.compute-1.amazonaws.com"
 
-    # response = requests.post("http://localhost:3000/lookup", data=data)
+    # response = requests.post("http://localhost:3000/lookup", json=data)
     response = requests.post("http://3.88.132.229:80/begin", json=data)
     return response.text
 
